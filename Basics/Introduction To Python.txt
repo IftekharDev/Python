@@ -1,0 +1,48 @@
+﻿Introduction to Python
+
+
+Python is a widely used general-purpose, high-level programming language. It was created by Guido van Rossum, and released in 1991. 
+It is used as a support language for software developers. Python ranks among the most popular and fastest-growing languages in the world.
+World's biggest app "Instagram" uses Python on its backend. Uber also uses Python somewhere as its backend language.
+
+
+Python is popular because:
+1. Emphasis is on code readability, shorter codes, and ease of writing.
+2. Closer to the English language and easy to Learn.
+3. Inbuilt functions for almost all of the frequently used concepts.
+4. Logical concepts are expressed in fewer lines of code in comparison to other languages such as C++ or Java.
+
+
+Python is an interpreted language and a python interpreter is a program that knows how to execute a python code, it converts the code written 
+in Python into a language that our computer can understand.
+
+
+# Uses:
+1. It is used to build web applications.
+2. It provides GUI library to develop a user interface, ex - Tkinter, PyQt, etc.
+3. It is used in software development.
+4. It is used in Business Applications, ex- E-commerce.
+5. Image Processing Applications.
+6. Game Development.
+7. Artificial Intelligence and Machine Learning.
+
+
+# Features :
+1. It is a case-sensitive language.
+2. Indentations are used.
+3. Variables are used without declaration.
+4. It is a dynamically typed language.
+5. It consists of a large library, etc.
+
+
+# IDLE (Integrated Development and Learning Environment) Python-
+It is a code editor which allows the user to write and execute a python program.
+It provides two window options:
+
+
+1. Interpreter Window: It allows us to enter commands directly into python. On pressing enter, python will execute it and display the result.
+(Print function is not required)
+
+
+2. Program Window: This window is purely for commands to be given. Programs are written , comments can be given and print statement is used to
+obtain result/output.
