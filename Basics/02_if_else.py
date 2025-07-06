@@ -51,3 +51,26 @@ elif (x==0):
    print("Number is Zero")
 else:
    print("Number is Negative")
+
+
+#---------------------------------------------------------
+
+
+x = int(input("enter a number: "))
+y = int(input("enter another number: "))
+operator = input("enter an operator: ")
+
+if operator == '+':
+    print(x+y)
+
+elif operator == '-':
+    print(x-y)
+
+elif operator == '*':
+    print(x*y)
+
+elif operator == '/':
+    print(x/y)
+
+else:
+    print("invalid operator")
