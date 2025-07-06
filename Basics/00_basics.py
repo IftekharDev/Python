@@ -40,6 +40,23 @@ print("\"All\'s well that ends well\"")
 print('This inserts a backslash\\ in a string')
 
 
+
+### Qs. Print the following
+'''
+Twinkle, twinkle, little star,
+	How I wonder what you are!
+    		Up above the world so high,
+            Like a diamond in the sky.
+Twinkle, twinkle, little star,
+	How I wonder what you are!
+'''
+
+
+print("Twinkle, twinkle, little star,\n\tHow I wonder what you are!\n\t\tUp above the world so high,\n\t\tLike a diamond\
+in the sky.\nTwinkle, twinkle, little star,\n\tHow I wonder what you are!")
+
+
+
 #---------------------------------------------------------------
 
 
@@ -141,3 +158,6 @@ print("Your name is",name_1, "and your age is", age_1)
 print("Your name is {} and your age is {}".format(name_1, age_1))
 print(f"Your name is {name_1} and your age is {age_1}")
 
+
+name = "hjhjkhhj"
+print(len(name))
