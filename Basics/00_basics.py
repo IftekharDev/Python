@@ -1,37 +1,46 @@
-#### Output function
+
+#### -----------Output function----------
 
 print("Hello World")
 
-### comments are identified by a # symbol
-### comments are written by a programmer to write his thought process while writing the code
+'''
+comments are identified by a # symbol
+comments are written by a programmer to write his thought process while writing the code
+'''
 
 
-#### Indentation
-### It refers to adding whitespaces at the beginning of a statement.
+#### ------------- Indentation ---------------
+'''
+It refers to adding whitespaces at the beginning of a statement.
+'''
 
 
-#-----------------------------------------------------------------
+###-----------------------------------------------------------------
 
 
 ####  -------end-------
-### end = "" is used to add two strings and print them on a single line
+'''
+end = "" is used to add two strings and print them on a single line
+'''
 
 print("Hello World", end=" ")
 print("it's a Lovely day !")
 
 
-#---------------------------------------------------------------
+### ---------------------------------------------------------------
 
 
-####  Escape Sequence Characters
+#### --------------  Escape Sequence Characters ----------------
 
 ### An escape character is a backslash '\' followed by any character needed to insert
 
-###  \n - newline character
-###  \t - tab
-###  \' - single quote
-###  \" - double quotes
-###  \\ - backslash
+'''
+\n - newline character
+\t - tab
+\' - single quote
+\" - double quotes
+\\ - backslash
+'''
 
 print('Hello \nWorld')
 print('Hello\tWorld')
@@ -57,24 +66,28 @@ in the sky.\nTwinkle, twinkle, little star,\n\tHow I wonder what you are!")
 
 
 
-#---------------------------------------------------------------
+### ---------------------------------------------------------------
 
 
-#### Raw String
+#### -------------- Raw String ------------------
 
-### Raw string are used to write something as it is.
-### It doesn't escape any character and treats single backslash as literal character.
+'''
+Raw string are used to write something as it is.
+It doesn't escape any character and treats single backslash as literal character.
+'''
 
 print(r'Hello \nWorld')
 print(r'hello\tWorld')
 print(r'"\"All\'s well that ends well\""')
 
 
-#---------------------------------------------------------------
+### ---------------------------------------------------------------
 
 
-####      input() Function
-##In Python, you can take input from the user using the input() function.
+####   -------   input() Function  ---------------------
+'''
+In Python, you can take input from the user using the input() function.
+'''
 
 userInput = input('enter something:' )
 print(userInput)
@@ -83,11 +96,13 @@ name = input('Enter your name: ')
 print('Hello' ,name)
 
 
-#---------------------------------------------------------------
+### ---------------------------------------------------------------
 
 
-####      type() Function 
-### In Python, The type() function is used to check the type of an object.
+#### ----------   type() Function  ----------------
+'''
+In Python, The type() function is used to check the type of an object.
+'''
 
 a = 'orange'
 print(type(a))
@@ -108,12 +123,14 @@ f = True
 print(type(f))
 
 
-#---------------------------------------------------------------
+### ---------------------------------------------------------------
 
 
-####       Format() Method 
-### In Python, the format() method is used to create formatted strings.
-### It helps you build strings where you can insert values or variables in specific positions within the string.
+#### ------------------  Format() Method --------------------
+'''
+In Python, the format() method is used to create formatted strings.
+It helps you build strings where you can insert values or variables in specific positions within the string.
+'''
 
 name = 'xyz'
 Hobby = 'Programming'
@@ -124,10 +141,10 @@ age = input('enter your age: ')
 print('My name is {}, I am {} years old.'.format(userName,age))
 
 
-#---------------------------------------------------------------
+### ---------------------------------------------------------------
 
 
-####      formatted string
+#### ---------- formatted string ----------------
 
 
 name = input("Enter your name: ")
@@ -140,7 +157,7 @@ print(f'I am {userName} and i am {age} years old.')
 
 
 
-#---------------------------------------------------------------
+###---------------------------------------------------------------
 
 ####     Practice
 

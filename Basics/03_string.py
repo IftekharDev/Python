@@ -1,6 +1,9 @@
+
 #### ------------------------------- Split() Function ----------------------------
 
-###  splits a string into a list based on the separator given :
+'''
+splits a string into a list based on the separator given 
+'''
 
 newStr = 'have a beautiful day !'
 print(newStr.split())
@@ -15,7 +18,9 @@ print(variable_2.split("#"))
 
 #### -------------------------------- Join() Function ----------------------------------
 
-### converts a list into a string :
+'''
+converts a list into a string 
+'''
 
 alist = [ 'a', 'b', 'c', 'd', 'e' ]
 a = ",".join(alist)
@@ -33,13 +38,17 @@ print(b)
 #### -------------------------------- Strip Function ----------------------------------
 
 
-### Strip function is used to remove any whitespace from the starting and from the ending of a string:
+'''
+Strip function is used to remove any whitespace from the starting and from the ending of a string
+'''
 
 string = "  ava  "
 print(string.strip())
 
 
-### strip can also be used to remove a specific characters if mentioned specified in the code:
+'''
+strip can also be used to remove a specific characters if mentioned specified in the code
+'''
 
 string_1 = "  ,,,!!!.... avta ....,,ttt"
 print(string_1.strip(" ,.!t"))
@@ -55,7 +64,9 @@ print(newName)
 
 #### -------------------- Count Function --------------------------
 
-### counts the accurance of a substring:
+'''
+counts the accurance of a substring
+'''
 
 newStr = "papaya papaya banana papaya orange orange"
 
@@ -67,8 +78,10 @@ print(newStr.count("a"))
 
 #### -------------------- startswith() Method --------------------
 
-### The startswith() method checks if a string starts with specified pattern or not.
-### if it does, it returns True, otherwise returns False.
+'''
+The startswith() method checks if a string starts with specified pattern or not.
+if it does, it returns True, otherwise returns False.
+'''
 
 string_1 = "Hello World!"
 print(string_1.startswith('Hello'))
@@ -90,7 +103,9 @@ print(string_1.endswith('World!'))
 
 #### --------------------- title() Method ------------------------
 
-### The title() method converts the first letter of each word in a string to uppercase and the rest to lowercase.
+'''
+The title() method converts the first letter of each word in a string to uppercase and the rest to lowercase.
+'''
 
 a = "hello world"
 b = a.title()
@@ -100,7 +115,9 @@ print(b)
 
 #### --------------------- lower() Method ------------------------
 
-### The lower() method converts all the letters of a string in lowercase.
+'''
+The lower() method converts all the letters of a string in lowercase.
+'''
 
 a = "HellO wOrlD"
 b = a.lower()
@@ -110,7 +127,9 @@ print(b)
 
 #### --------------------- upper() Method ------------------------
 
-### The upper() method converts all the letters of a string in uppercase.
+'''
+The upper() method converts all the letters of a string in uppercase.
+'''
 
 a = "HellO wOrlD"
 b = a.upper()
@@ -145,6 +164,16 @@ print(string[2])
 print(string[6])
 
 
+#### -------index() method------------------------------------
+
+'''
+The index() method returns the index of the first occurrence of the specified element.
+'''
+
+string = "I'm whoever"
+print(string.index("m"))
+
+
 #### --------------------- type casting ------------------------
 
 a = 5
@@ -157,7 +186,9 @@ print(type(b))
 
 #### --------------------- len() function ------------------------
 
-### len() returns the total number of characters in a string.
+'''
+len() returns the total number of characters in a string.
+'''
 
 
 string = "My name is Arsalan Shaami"

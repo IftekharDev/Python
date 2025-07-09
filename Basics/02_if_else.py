@@ -1,8 +1,12 @@
+
 ############### if-else statements ###############
 
-#These are decision making statements used to execute a block of code.
-#if a condition is true, if part is executed, if a condition is false, else part is executed
-#if a user wants to check multiple conditions, if-elif-else ladder is used. elif is executed only when the condition passed in if block is false
+'''
+These are decision making statements used to execute a block of code.
+if a condition is true, if part is executed, if a condition is false, else part is executed.
+if a user wants to check multiple conditions, if-elif-else ladder is used. 
+elif is executed only when the condition passed in if block is false.
+'''
  
 
 num1 = int(input("Enter a number : "))
