@@ -197,10 +197,12 @@ print(flowers)
 
 '''
 In Python, the extend() method is a built-in method for lists.
-It is used to append elements to the end of an existing list.
+It is used to append elements to the end of an existing list. Doesn't create a nested list.
 '''
 
 flowers = ['rose','marigold','daisy','lavender','sunflower']
 flowers2 = ['dandelion','jasmine','Hibiscus','Bougainvillea']
 flowers.extend(flowers2)
+print(flowers)
+flowers.append(flowers2)
 print(flowers)

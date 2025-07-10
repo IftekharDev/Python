@@ -1,0 +1,32 @@
+# Python Assignment 1 :                                                                                     [20 m.m]
+
+Q.1 Write a program that accepts the user's first and last name and prints them in reverse 
+         order with a space between them.               (1 marks)
+
+Q.2 Write a program to print the sum of two user inputted numbers. (1 marks)
+
+Q.3 Write a program to count the occurrence of 9 from a given list - (2 marks)
+       list_1 = [2,4,6,8,9,3,5,8,9,1,5,9,3,7,2,3,9]
+
+Q.4 Write a program to extend an existing animal list with names camel, rabbit, lion and 
+        zebra. (2 marks)
+
+Q.5 Write a program to find the index of 'car' from a given list - (2 marks)
+        list_2 = ['truck', 'bicycle', 'rickshaw', 'car', 'motorbike']
+
+Q.6 Write a program to join a list of strings - (2 marks)  
+        list_3 = ['H', 'A', 'P', 'P', 'I', 'N', 'E', 'S', 'S']
+
+Q.7 Write a program to check whether a user inputted number is even or odd. (2 marks)
+
+Q.8  Write a Python program that creates a dictionary with the names of 3 students and their 
+      corresponding scores. Then, update the score of one student and print the updated 
+     dictionary. (2 marks)
+
+Q.9 Write a program to create a calculator that performs three mathematical operations 
+      - Subtraction, Multiplication and Division by user inputted numbers and operator and 
+        returns a message for invalid operator otherwise. (3 marks)
+
+Q.10 Write a Python program that takes a user input for their first name and last name, and 
+      then prints a formatted string that displays their full name and the length of their full 
+      name (excluding any spaces). (3 marks)

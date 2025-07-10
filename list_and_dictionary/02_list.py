@@ -82,3 +82,6 @@ reversed() function reverse a copy of original sequence and returns a reverse ob
 # print(resultList[0][0])
 # print(resultList[1][2])
 
+# cList = [5,6,7]
+# resultList.insert(1,cList)
+# print(resultList)
