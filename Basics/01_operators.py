@@ -128,4 +128,5 @@ print(not a == 2)
 print(a==2 and b==5)  
 print(not(a==2 and b==5))
 
+print(a != b)  ## ! - is also used for not.
 

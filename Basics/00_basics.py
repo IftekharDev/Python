@@ -45,6 +45,7 @@ print("it's a Lovely day !")
 print('Hello \nWorld')
 print('Hello\tWorld')
 print('Father\'s name')
+print('It\'s raining.')
 print("\"All\'s well that ends well\"")
 print('This inserts a backslash\\ in a string')
 
@@ -94,6 +95,11 @@ print(userInput)
 
 name = input('Enter your name: ')
 print('Hello' ,name)
+print(type(name))
+
+number = input("Enter a number")
+print(number)
+print(type(number))   ## input function always takes the input as string.
 
 
 ### ---------------------------------------------------------------
@@ -121,6 +127,16 @@ print(type(e))
 
 f = True
 print(type(f))
+
+
+
+#### ----------   len() Function  ----------------
+
+'''
+len() method returns the total length of elements in a data type.
+'''
+string = "Hello"
+print(len(string))
 
 
 ### ---------------------------------------------------------------

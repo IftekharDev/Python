@@ -147,6 +147,12 @@ c = "Hello"
 print(c.lower())
 
 
+#### --------------------- swapcase() Method ------------------------
+
+string = "Hello World"
+print(string.swapcase())
+
+
 #### --------------------- String Concatenation ------------------------
 
 first_name = "xyz"
@@ -207,7 +213,7 @@ stri = stri.strip()
 print(stri)
 
 
-#----------- String Slicing --------------------------
+#### ----------- String Slicing --------------------------
 
 '''
 String slicing in Python is a way to extract a part of a string.
@@ -221,3 +227,13 @@ print(a_string[7:16])
 print(a_string[17:20])
 print(a_string[-4:-1])
 print(a_string[0::2])
+
+
+#### ----------- Practice Ques --------------------------
+
+'''
+Qs. Find the sum of digits of user inputted two digit number.
+'''
+number = input("Enter a two digit number: ")
+sum = int(number[0]) + int(number[1])
+print(sum)

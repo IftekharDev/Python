@@ -1,23 +1,3 @@
-#### ---------- use of .items() ----------------------------
-
-'''
-items() returns a list of tuples where each tuple is a tuple of key-value pair.
-'''
-
-my_dict = {
-    'name':'Ben',
-    'age':'11',
-    'city':'New york'}
-
-print(my_dict.items())
-
-'''
-Getting key and value separately using .items()
-'''
-
-for k,v in my_dict.items():
-   print(k,v)
-
 
 #### ----------- use of .clear() ---------------------------
 
@@ -130,3 +110,16 @@ print(student_data["Student_3"])
 del student_data["Student_3"]['Address']
 print(student_data["Student_3"])
 
+
+Teams = {
+    "Team_A" : ["Nora", "Salman"],
+    "Team_B" : ["Zadran", "Irshad"],
+    "Team_C" : ["John", "Salena"]
+     }
+print(Teams["Team_C"])
+Teams["Team_B"].append("Saba")
+print(Teams)
+
+Teams["Team_B"].pop()
+
+print(Teams)

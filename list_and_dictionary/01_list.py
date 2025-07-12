@@ -148,7 +148,7 @@ print(flowers.pop())
 flowers = ['rose','marigold','daisy','lavender','sunflower']
 del flowers[2]
 print(flowers)
-del flowers                   ## Deletes the whole list
+# del flowers                   ## Deletes the whole list
 print(flowers)
 
 #### --------- clear() method----------------------

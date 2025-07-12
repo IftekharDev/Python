@@ -86,3 +86,23 @@ my_dict = {
     'city':'New york'}
 print(my_dict.keys())
 
+
+#### ---------- use of .items() ----------------------------
+
+'''
+items() returns a list of tuples where each tuple is a tuple of key-value pair.
+'''
+
+my_dict = {
+    'name':'Ben',
+    'age':'11',
+    'city':'New york'}
+
+print(my_dict.items())
+
+'''
+Getting key and value separately using .items()
+'''
+
+for k,v in my_dict.items():
+   print(k,v)
