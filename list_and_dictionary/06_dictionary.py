@@ -107,3 +107,26 @@ pets["pet2"]["age"] = 4
 print(pets)
 
 
+#### ------------------------- Practice Ques -----------------------
+
+student_data = {
+    "Student_1" : {"Name":"xyz", "age": 18},
+    "Student_2" : {"Name":"abc", "age": 78},
+    "Student_3" : {"Name":"something", "age":20}
+    }
+
+print(len(student_data))
+print(student_data["Student_1"]["age"])
+
+### change the name of student_2
+student_data["Student_2"]["Name"] = "Shahrukh"
+print(student_data)
+
+### Add address for student_3
+student_data["Student_3"]["Address"] = "Batla House"
+print(student_data["Student_3"])
+
+### Delete the address of student_3.
+del student_data["Student_3"]['Address']
+print(student_data["Student_3"])
+
