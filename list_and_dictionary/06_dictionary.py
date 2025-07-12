@@ -123,3 +123,32 @@ print(Teams)
 Teams["Team_B"].pop()
 
 print(Teams)
+
+
+my_dict = {
+        "obj_1" : "i am a dictionary",
+        "obj_2" : {"key_1":"i am a dictionary within a dictionary"},
+        "obj_3" : ["apple","banana","mangoes",["papaya","orange"]],
+        "obj_4" : {"key_2": {"Greetings":"Hello World"}},
+        "obj_5" : {"key_3": [1,2,3]}
+        }
+
+# Q.1, WAP to print Hello World from obj_4
+# Q.2, WAP to print Orange from obj_3
+# Q.3, WAP to add 4 as a last element in the list, present inside obj_5
+# Q.4, WAP to add a new key and value in your dictionary "obj_6" containg boolean values 
+#           in a list as the key's valuse. example ;          {"obj_6" : [True, False]}
+# Q.5, replace "mangoes" from obj_3 with "kiwi"
+
+
+print(my_dict["obj_4"]["key_2"]["Greetings"])
+
+print(my_dict["obj_3"][3][1])
+
+my_dict["obj_5"]["key_3"].append(4)
+print(my_dict["obj_5"]["key_3"])
+
+my_dict["obj_6"] = [True , False]
+print(my_dict["obj_6"])
+
+my_dict["obj_3"][2] = "kiwi"
