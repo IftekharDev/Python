@@ -1,3 +1,4 @@
+
 ### Q1.
 
 first_name = input("Enter your first name: ")
