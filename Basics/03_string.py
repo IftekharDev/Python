@@ -207,3 +207,17 @@ stri = stri.strip()
 print(stri)
 
 
+#----------- String Slicing --------------------------
+
+'''
+String slicing in Python is a way to extract a part of a string.
+'''
+
+a_string = "Have a Beautiful day!"
+print(a_string)
+
+print(a_string[0:4])
+print(a_string[7:16])
+print(a_string[17:20])
+print(a_string[-4:-1])
+print(a_string[0::2])

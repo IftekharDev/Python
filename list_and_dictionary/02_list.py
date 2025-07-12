@@ -88,7 +88,7 @@ print(resultList)
 
 
 
-#--------------------- ENUMERATE FUNCTION -----------------------
+#### --------------------- ENUMERATE FUNCTION -----------------------
 
 li = ['a','b','c','d','e']
 print(enumerate(li))     # returns an object that needs to be converted into a list           
@@ -101,3 +101,28 @@ newList = ['rose','sunflower','lily']
 
 for index,element in enumerate(newList):
    print(index,element)
+
+
+#### -------Slicing-------------------------------------
+
+'''
+List slicing in Python refers to the technique of extracting a portion of a list. 
+It allows you to create a new list that consists of elements from a specified range of indices.
+#Syntax : [start:stop:step]
+'''
+
+alist = ['Hello',12,'15',True,5.5,3]
+print(alist)
+
+print(alist[0:1])
+print(alist[1:4])
+print(alist[2:3])
+print(alist[1::2])
+print(alist[:])
+print(alist[5:])
+print(alist[:4])
+print(alist[0:6:2])
+print(alist[0:4:3])
+print(alist[-3:-1])
+print(alist[0:-3])
+print(alist[0:-1:2])
