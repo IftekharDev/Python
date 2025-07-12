@@ -113,7 +113,6 @@ It allows you to create a new list that consists of elements from a specified ra
 
 alist = ['Hello',12,'15',True,5.5,3]
 print(alist)
-
 print(alist[0:1])
 print(alist[1:4])
 print(alist[2:3])
