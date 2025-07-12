@@ -46,7 +46,7 @@ print(tup.count(7))
 #### -------del in tuple------------------------
 
 tup = (2,4,5,3,1,2,7,6,2,8,2)
-del(tup)
+# del(tup)
 print(tup)
 
 
@@ -76,3 +76,21 @@ print(string)
 
 tup3 = tuple(string)
 print(tup3)
+
+
+#### ----------------------- ZIP FUNCTION ---------------------------
+
+'''
+Zip is an inbuilt function in python, used to iterate over multiple iterables.
+it takes corresponding elements from all the iterables passed to it and merges them into a tuple.
+returns a zip objects that can be converted into a list for better reading.
+
+
+syntax : zip(iterable1, iterable2, iterable3 etc)
+'''
+
+li = ['a','b','c','d','e']
+li2 = [1,2,3,4,5]
+
+li3 = list(zip(li, li2))
+print(li3)
