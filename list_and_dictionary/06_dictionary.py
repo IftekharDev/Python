@@ -44,8 +44,8 @@ my_dict = {
     'age':'11',
     'city':'New york'}
 
-del(my_dict)
-print(my_dict)
+# del(my_dict)
+# print(my_dict)
 
 
 #### ------------- .copy() -------------------------
