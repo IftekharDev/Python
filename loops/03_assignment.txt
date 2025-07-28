@@ -1,0 +1,27 @@
+
+# Python Assignment 2 :                                                                                    
+
+Q.1, Write a program to print 'pleasant day' from a string "What a pleasant day". 
+
+Q.2, WAP to print the squares of each element of a list.
+        alist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+Q.3, WAP to calculate x to the power y using loop (x and y must be user inputs). 
+
+Q.4,  WAP to create a new list of evens from a given tuple. 
+        tuple1 = (23, 44, 56, 12, 51, 19, 16, 22, 40)
+
+Q.5, WAP to print the factorial of a user inputted number 
+
+Q.6, WAP that creates a new list containing all the elements of the given list, with each 
+        element converted to a string data type.   
+        blist = [1, 2, 3, 4,5, 0, 'hello', 9, True]
+
+Q.7, WAP to create a new list containing the cubes of even numbers from 1 to 10.
+
+Q.8, WAP to create a dictionary using elements of a list as keys and index numbers as 
+       the values of a dictionary without using index and enumerate functions. 
+       clist = ['a', 'b', 'c', 'd', 'e', 'f']
+      at the end, your dictionary should look like :
+      {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4, 'f': 5}
+
