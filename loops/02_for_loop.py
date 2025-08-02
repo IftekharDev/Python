@@ -177,3 +177,19 @@ else:
     print("I've not found mango.")
 
 
+#-------------------------------------------------------------
+'''
+print all the primes from 1 to a given number.
+'''
+
+max_number = int(input("Enter a number until which you want to find all the primes: "))
+primes = []
+
+for i in range(2,max_number+1):
+    for j in range(2,i):
+        if i%j==0:
+            break
+    else:
+        primes.append(i)
+
+print(primes)
