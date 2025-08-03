@@ -4,3 +4,4 @@ Following is the Sequence of folder:
 2. list_and_dictionary
 3. tuples_and_sets
 4. loops
+5. functions
