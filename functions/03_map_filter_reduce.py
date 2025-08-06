@@ -78,6 +78,22 @@ cubes_list = list(map(lambda x: x**3, range(1,num+1)))
 print(cubes_list)
 
 
+## ---------------------------------------------------------------------------------------
+
+li =['hello', 'world']
+
+print(list(map(lambda x: x.upper(), li)))
+
+
+## ---------------------------------------------------------------------------------------
+
+di = [{'name': 'Alice', 'age': 25},
+      {'name': 'Bob', 'age': 30}]
+
+names = list(map(lambda x: x.get("name"), di))
+print(names)
+
+
 #### --------------- FILTER FUNCTION -------------------
 '''
 Filter function filters out a given sequence by passing it into a function returning true values
