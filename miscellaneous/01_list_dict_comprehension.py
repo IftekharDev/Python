@@ -14,6 +14,10 @@ square_list = [i*i for i in range(1,21)]
 print(square_list)
 
 
+cube_list = [i**3 for i in range(1,11)]
+print(cube_list)
+
+
 ##A list with table of two
 
 table_of_two = [i*2 for i in range(1,11)]
@@ -26,6 +30,11 @@ filtered_cities = [i for i in cities if "o" in i]
 print(filtered_cities)
 
 
+flowers = ["rose", "tulip", "sunflower", "lily", "daisy"]
+new_list = [i for i in flowers if i!= 'daisy']
+print(new_list)
+
+
 #### -------------- NESTED LISTS --------------
 
 a =[[i] for i in range(4)]
@@ -33,6 +42,10 @@ print(a)
 
 nested_list = [[i for i in range(1,4)] for i in range(4)]
 print(nested_list)
+
+
+li_2 = [[i for i in range(1,31) if i%10==0] for i in range(4)]
+print(li_2)
 
 
 #### ---------------DICTIONARY COMPREHENSIONS-------------------
