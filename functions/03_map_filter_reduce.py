@@ -1,7 +1,8 @@
 
 #### -------------------- MAP FUNCTION -------------------------------
 
-'''Map function returns a map object. It takes two arguments, a function and an iterable.
+'''
+Map function returns a map object. It takes two arguments, a function and an iterable.
 It appplies a given function to each item of that given iterable.
 '''
 
