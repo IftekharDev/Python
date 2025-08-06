@@ -5,8 +5,8 @@ import os
 '''
 Returns a list of all names (functions, constants, submodules) defined in the os module at runtime.
 '''
-# print(dir(os))
-# print(dir(os)[:15])
+print(dir(os))
+print(dir(os)[:15])
 
 
 #### ------- os.listdir(path='.') -------
@@ -16,8 +16,8 @@ Returns a Python list of filenames (and directory names) present in path. Defaul
 
 # print(os.listdir())
 
-# files = os.listdir('.')
-# print(files)
+files = os.listdir('.')
+print(files)
 
 
 #### ------- os.getcwd() -------
@@ -26,8 +26,8 @@ Returns a Python list of filenames (and directory names) present in path. Defaul
 Returns the absolute path to the process's current working directory.
 '''
 
-# cwd = os.getcwd()
-# print("We are in: ", cwd)
+cwd = os.getcwd()
+print("We are in: ", cwd)
 
 
 #### ------- os.chdir(path) -------
@@ -35,11 +35,11 @@ Returns the absolute path to the process's current working directory.
 '''
 Changes the current working directory to path.
 '''
-# print(os.chdir(r"C:/LearningVault/Python/miscellaneous"))
-# print(os.getcwd())
+## print(os.chdir(r"C:/LearningVault/Python/miscellaneous"))
+## print(os.getcwd())
 
-# os.chdir(r"C:/LearningVault/Python")
-# print(os.getcwd())
+## os.chdir(r"C:/LearningVault/Python")
+## print(os.getcwd())
 
 
 #### ------- os.mkdir(path, mode=0o777, *, dir_fd=None) -------
@@ -67,7 +67,7 @@ Renames a file or directory
 '''
 Deletes a file (not a directory). Fails if the file is open on Windows. os.rmdir() is used to remove directory.
 '''
-# os.remove('archive_2025.txt')
+## os.remove('archive_2025.txt')
 
 
 #### ------- os.path.join() -------
@@ -106,3 +106,10 @@ Dict-like access to environment variables.
 '''
 
 ##token = os.environ.get('API_TOKEN', '')   ## from .env file
+
+
+
+
+#### ---------- File Handling --------------------
+
+## To be continued
