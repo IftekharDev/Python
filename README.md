@@ -5,3 +5,4 @@ Following is the Sequence of folder:
 3. tuples_and_sets
 4. loops
 5. functions
+6. miscellaneous
