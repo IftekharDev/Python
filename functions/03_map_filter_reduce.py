@@ -141,6 +141,11 @@ y = list(filter(lambda x: x%5 == 0, alist))
 print(y)
 
 
+## ---------------------------------------------------------------------------------------
+
+alist = ['Apple', 'Banana', 'Avocado']
+print(list(filter(lambda x: x.startswith('A'), alist)))
+
 
 #### ---------------- REDUCE FUNCTION--------------------
 '''
