@@ -2,26 +2,26 @@
 ### Python Assignment 3                                                                                    [20 m.m]
 
 Q1. Write a python prgram to list of cubes till a given number
-         using map function. (2 marks)
+         using map function.
 
 
 Q2. Write a Python program which selects and prints (as a list)
       all the strings of length greater than 4 from a list of
-      strings using filter function and lambda. (2 marks)
+      strings using filter function and lambda.
           strings = ['alexander','joe','tiffany','ana','max','george']
 
 
 Q3. Write a Python print the factorial of a given number by using
-        reduce function. (2 marks)
+        reduce function.
 
 
 Q4. Write a Python program which converts all the elements of
-     given list into string datatype using map function. (2 marks)
+     given list into string datatype using map function.
            alist = [1,2,3,4,5,6,7,8,9,10]
 
 
 Q5. Write a Python code to filter out the numbers from the given list that are greater 
-        than 20. (2 marks)
+        than 20.
           numbers = [12, 35, 7, 64, 22, 17]
 
 
@@ -29,23 +29,23 @@ Q6. Write a Python program which converts a list of integers into
     dictionary such that keys of the dictionary are the elements
     of the list and the values are square of these elements but
     this is done only for those elements which are even.
-    Use dictionary comprehension. (2 marks)
+    Use dictionary comprehension.
          blist = [1,2,3,4,5,6,7,8,9,10]
 
 
-Q7.  Write a Python program which multiplies the corresponding
+Q7. Write a Python program which multiplies the corresponding
     elements of two lists and forms a list of these products .
-    Use map function. (2 marks)
+    Use map function.
 
 Clist = [1,2,3,4,5]
 Dlist = [1,2,3,4,5]
 
 
 Q8. Write a program to filter out all the numbers from the given list and
-    the calculate the sum of all these numbers. (Use filter and reduce) (3 marks)
+    the calculate the sum of all these numbers. (Use filter and reduce)
          li = ['Hello', 12, True, '92', ' ', 'Morning', 45, '@']
 
 
 Q9.  Write a Python Program to check which of the numbers in a
-     given list are Prime Numbers,  use filter function (3 marks)
+     given list are Prime Numbers,  use filter function
            givenList = [2,3,4,5,6,7,8,9]
