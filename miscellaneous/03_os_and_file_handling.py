@@ -112,4 +112,84 @@ Dict-like access to environment variables.
 
 #### ---------- File Handling --------------------
 
-## To be continued
+
+#### ------------Opening and Closing Files-----------
+
+'''
+open(file, mode='r', encoding=None, newline=None, buffering=-1)
+Creates and returns a file object.
+
+
+Mode        Meaning                     Notes
+'r' 	    read text                   default; file must exist
+'w'	        write text, truncate	    creates or overwrites
+'a'     	append text	                creates if absent
+'r+'    	read and write	            pointer at start
+'''
+
+# variable = open('04_text.txt','r')
+# print(variable.read())
+# variable.close()
+
+
+# var = open('04_text.txt', 'a')
+# var.write("hello")
+# var.close()
+
+
+# var_1 = open('04_text.txt', 'r')
+# print(var_1.read())
+# var_1.close()
+
+
+# var3 = open('04_text.txt', 'w')
+# var3.write('Hello')
+# var3.close()
+
+
+# var4 = open('04_text.txt', 'w')
+# var4.write('new text')
+# var4.close()
+
+
+## -------------------------------------------------------------
+
+# with open('04_text.txt','r') as variable:
+#    print(variable.read())
+
+
+# with open('04_text.txt','a') as variable:
+#    print('\n')
+#    variable.write('\n')
+#    variable.write('baby')
+#    print('\n')
+
+
+with open("04_text.txt", 'r+') as text:
+    print(text.read())
+    text.write("\n New text added")
+    print("New text added successfully")
+
+## ------------------------------------------------------------------------------------------------
+
+'''
+read(): Reads the whole file as a single string. Use read() if you want the entire file content in one go.
+
+readline(): Reads one line at a time from the file.
+Useful when you want to process each line individually and maintain the line structure.
+
+readlines(): Reads all lines from the file and returns them as a list of strings.
+Useful when you want to process each line individually and maintain the line structure.
+'''
+
+# with open('04_text.txt', 'r') as a:
+#    print(a.read())
+
+
+# with open('04_text.txt', 'r') as a:
+#     lines = a.readlines()
+
+# cleaned_list = [line.strip() for line in lines]
+# print(cleaned_list)
+
+
