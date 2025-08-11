@@ -76,8 +76,8 @@ Deletes a file (not a directory). Fails if the file is open on Windows. os.rmdir
 Builds paths portably using the right separator.
 '''
 
-# full = os.path.join('logs', '2025', 'app.log')
-# print(full)
+full = os.path.join('logs', '2025', 'app.log')
+print(full)
 
 
 #### ------- oos.path.exists() -------
@@ -86,8 +86,8 @@ Builds paths portably using the right separator.
 Quick existence check for files or dirs.
 '''
 
-# if not os.path.exists('config.ini'):
-#     print("This file doesn't exists")
+if not os.path.exists('config.ini'):
+    print("This file doesn't exists")
 
 
 #### ------- os.makedirs() -------
@@ -127,48 +127,49 @@ Mode        Meaning                     Notes
 'r+'    	read and write	            pointer at start
 '''
 
-# variable = open('04_text.txt','r')
-# print(variable.read())
-# variable.close()
+variable = open('04_text.txt','r')
+print(variable.read())
+variable.close()
 
 
-# var = open('04_text.txt', 'a')
-# var.write("hello")
-# var.close()
+var = open('04_text.txt', 'a')
+var.write("hello")
+var.close()
 
 
-# var_1 = open('04_text.txt', 'r')
-# print(var_1.read())
-# var_1.close()
+var_1 = open('04_text.txt', 'r')
+print(var_1.read())
+var_1.close()
 
 
-# var3 = open('04_text.txt', 'w')
-# var3.write('Hello')
-# var3.close()
+var3 = open('04_text.txt', 'w')
+var3.write('Hello')
+var3.close()
 
 
-# var4 = open('04_text.txt', 'w')
-# var4.write('new text')
-# var4.close()
+var4 = open('04_text.txt', 'w')
+var4.write('new text')
+var4.close()
 
 
 ## -------------------------------------------------------------
 
-# with open('04_text.txt','r') as variable:
-#    print(variable.read())
+with open('04_text.txt','r') as variable:
+   print(variable.read())
 
 
-# with open('04_text.txt','a') as variable:
-#    print('\n')
-#    variable.write('\n')
-#    variable.write('baby')
-#    print('\n')
+with open('04_text.txt','a') as variable:
+   print('\n')
+   variable.write('\n')
+   variable.write('baby')
+   print('\n')
 
 
 with open("04_text.txt", 'r+') as text:
     print(text.read())
     text.write("\n New text added")
     print("New text added successfully")
+
 
 ## ------------------------------------------------------------------------------------------------
 
@@ -182,14 +183,14 @@ readlines(): Reads all lines from the file and returns them as a list of strings
 Useful when you want to process each line individually and maintain the line structure.
 '''
 
-# with open('04_text.txt', 'r') as a:
-#    print(a.read())
+with open('04_text.txt', 'r') as a:
+   print(a.read())
 
 
-# with open('04_text.txt', 'r') as a:
-#     lines = a.readlines()
+with open('04_text.txt', 'r') as a:
+    lines = a.readlines()
 
-# cleaned_list = [line.strip() for line in lines]
-# print(cleaned_list)
+cleaned_list = [line.strip() for line in lines]
+print(cleaned_list)
 
 
