@@ -6,26 +6,26 @@ A callback function in Python is a function that is passed as an argument to ano
 is executed inside that function.
 '''
 
-# def function_1(func):
-#     return "i am function 1 " + func()
+def function_1(func):
+    return "i am function 1 " + func()
 
-# def function_2():
-#     return "i am function 2"
+def function_2():
+    return "i am function 2"
 
-# result = function_1(function_2)
-# print(result)
+result = function_1(function_2)
+print(result)
 
 
 ### -------------------------------------------------------------------------------
 
-# def greet(name, callback):
-#    message = f"Hello, {name}!"
-#    return callback(message)
+def greet(name, callback):
+   message = f"Hello, {name}!"
+   return callback(message)
 
-# def print_message(msg):
-#    print(msg)
+def print_message(msg):
+   print(msg)
 
-# greet("Alice", print_message)
+greet("Alice", print_message)
 
 
 #### ------------Nested Function------------------------
@@ -34,26 +34,25 @@ is executed inside that function.
 A nested function is a function defined inside another function.
 '''
 
-# def outer():
-#    x = 12
-#    def inner():
-#        print(x)
+def outer():
+   x = 12
+   def inner():
+       print(x)
    
-#    inner()
+   inner()
 
-# outer()
+outer()
 
 
 ### -------------------------------------------------------------------------------
 
-# def greet(name):
-#    def say_hello():
-#        print(f"Hello, {name}!")
+def greet(name):
+   def say_hello():
+       print(f"Hello, {name}!")
    
-#    say_hello()
+   say_hello()
 
-# greet("Alice")
-
+greet("Alice")
 
 
 #### -----------------Closure---------------------
@@ -66,33 +65,34 @@ For inner Function to be a closure, it needs to be returned from outerFunction a
 then called after outerFunction has finished executing.
 '''
 
-# def outer_function(x):
-#    def inner_function(y):
-#        return x + y
-#    return inner_function
+def outer_function(x):
+   def inner_function(y):
+       return x + y
+   return inner_function
 
-# result = outer_function(10)
-# print(result(5))
+result = outer_function(10)
+print(result(5))
 
 
 ### -------------------------------------------------------------------------------
 
-# def my_func(value):
-#    def multiply(number):
-#        return number * value
-#    return multiply
+def my_func(value):
+   def multiply(number):
+       return number * value
+   return multiply
+
+result = my_func(3)
+
+print(result(5)) 
+print(result(10))
 
 
-# result = my_func(3)
+### --------------------------------
 
-# print(result(5)) 
-# print(result(10))
+def Greet(n):
+     def Greet_2():
+           return f"Hello {n}"
+     return Greet_2
 
-
-# def Greet(n):
-#      def Greet_2():
-#            return f"Hello {n}"
-#      return Greet_2
-
-# var = Greet("Ana")
-# print(var())
+var = Greet("Ana")
+print(var())
