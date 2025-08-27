@@ -105,17 +105,16 @@ When a function calls itself it is known as recursion.
 Recursive functions render the code look simple and effective.
 '''
 
-# def greet():
-#     print("Hello World")
-#     # greet()
+def greet():
+    print("Hello World")
+    # greet()
     
-# greet()
+greet()
 
 
 #-------------------------------------------------------
 
 ### Factorial using recursion
-
 
 def factorial(n):
     if n ==0 or n ==1:
