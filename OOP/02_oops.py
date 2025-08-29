@@ -57,6 +57,24 @@ When we use + operator, the magic method __add__ is automatically invoked
 '''
 
 
+### ---------------------------------------------------------------------------------
+
+class X:
+    def __init__(self, a,b):
+        self.num1 = a
+        self.num2 = b
+
+    def __add__(self,other):
+        print(self.num1 + other.num1)
+        print(self.num2 + other.num2)
+
+obj1 = X(2,3)
+obj2 = X(5,5)
+obj3 = obj1 + obj2
+
+
+### ---------------------------------------------------------------------------------
+
 class Vector:
     def __init__(self, x, y):
         self.x = x
