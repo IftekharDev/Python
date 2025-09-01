@@ -124,3 +124,32 @@ Getter and Setter methods in python are used to provide read
 # print("Updated Salary :",obj.salary)
 
 
+### ---------------------Practice Question----------------------------
+
+'''
+Q. Define a class 'Book' with a private attribute: 'title'. Create a getter method
+that returns the title, and a setter method that updates the title.
+
+Then, create an instance of 'Book', use the setter to change the title, 
+and use the getter to print the updated title.
+'''
+
+
+class Book:
+    def __init__(self, title):
+        self.__title = title
+
+    @property
+    def get_title(self):
+        return self.__title
+    
+    @get_title.setter
+    def set_title(self, value):
+        self.__title = value
+
+
+book = Book("Befikre")
+print(book.get_title)
+
+book.set_title = "Pani"
+print(book.get_title)
