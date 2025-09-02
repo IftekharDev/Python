@@ -1,0 +1,35 @@
+
+1 - 
+Write a Python program which searches for all the Phone numbers(Eg: 0755-4926545) 
+in a given text and prints them without the area code.
+
+2 - 
+Write a Python program which search the first occurrence of "it was good" and print start 
+index and end index of the match.
+
+3 -
+Write a Python program which takes an input from the user and checks if the input is a valid 
+company id . Company Id format - INV1234 (INV followed by number which is upto 4 digit 
+long)
+
+4 -
+a). Write a Python program which searches for the word farmer in its singular and plural 
+forms and prints the number of matches. The search should NOT be case sensitive.
+b) Write the above program for a Case Sensitive search.
+
+5 -
+Write a Python program which searches in a text file for all the occurrences of an entered 
+text and then prints  start indices of all the matches
+
+6 -
+Write a Python program which prints "Starts with a number " if  a given text starts with a 
+Number, prints "Ends with a number " if a given text ends with a Number, prints both the 
+messages if both the cases are true and prints "Neither starts nor ends with a number" if 
+both the cases are not true.  This number can have any number of digits.
+
+7 -
+Write a Python program which reads a text file and makes the following changes:  
+a) Removes all the special characters from the text.
+b) Removes all the new line characters from the text
+c) Removes all the words which have length two or less
+d) Replaces all the email Ids in the text with string -'EmailID'
