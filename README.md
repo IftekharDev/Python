@@ -1,4 +1,4 @@
-Following is the Sequence of folder:
+# Following is the Sequence of folder:
 
 1. Basics
 2. list_and_dictionary
@@ -7,3 +7,4 @@ Following is the Sequence of folder:
 5. functions
 6. miscellaneous
 7. OOP
+8. regex
