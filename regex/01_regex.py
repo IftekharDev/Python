@@ -12,27 +12,27 @@ Regular expressions allows us to-
 
 import re
 
-# animalstr = 'cat rat mat bat cat sat Mat Cat pat hat fat'
+animalstr = 'cat rat mat bat cat sat Mat Cat pat hat fat'
 
 ### search returns first occurance of match object
-# print(re.search('cat', animalstr))
+print(re.search('cat', animalstr))
 
 
 ### findall returns list of matches
-# print(re.findall('cat',animalstr))
+print(re.findall('cat',animalstr))
 
 
 ###[] accepts only one character
-# print(re.findall('[cC]at', animalstr))
+print(re.findall('[cC]at', animalstr))
 
 
 ### Use ^ to denote any character except whatever characters are between the brackets
-# print(re.findall('[^bsmM]at', animalstr))
+print(re.findall('[^bsmM]at', animalstr))
 
 
 ### printing a range of matches
-# string = re.findall('[c-m]at',animalstr)
-# print(string)
+string = re.findall('[c-m]at',animalstr)
+print(string)
 
 
 #### -------------- Replace All Matches --------------
@@ -42,36 +42,35 @@ You can compile a regex into pattern objects which provide additional methods
 sub() replaces items that match the regex in the string
 '''
 
+string1 = 'earth revolves around the sun'
+n = re.compile('earth')
 
-# string1 = 'earth revolves around the sun'
-# n = re.compile('earth')
+finalStr = re.sub(n, 'moon', string1)
 
-# finalStr = re.sub(n, 'moon', string1)
-
-### substituting regex pattern in a string
-# print(finalStr)
+## substituting regex pattern in a string
+print(finalStr)
 
 
 ### Another way of substituting
 
-# a = re.compile('earth')
-# match = a.sub('Saturn', string1)
-# print(match)
+a = re.compile('earth')
+match = a.sub('Saturn', string1)
+print(match)
 
 
-# string1 = 'earth revolves round the sun'
-# match = re.sub('earth', 'Saturn', string1)
-# print(match)
+string1 = 'earth revolves round the sun'
+match = re.sub('earth', 'Saturn', string1)
+print(match)
 
 
-# text = "The quick brown fox jumps over the lazy dog. The fox is fast."
-# pattern = r"fox"
-# replacement = "cat"
+text = "The quick brown fox jumps over the lazy dog. The fox is fast."
+pattern = r"fox"
+replacement = "cat"
 
 ### Replace only the first occurrence by setting count=1
-# new_text_one_replacement = re.sub(pattern, replacement, text, count=1)
+new_text_one_replacement = re.sub(pattern, replacement, text, count=1)
 
-# print(new_text_one_replacement)
+print(new_text_one_replacement)
 
 
 #### ---------- Solving Backslash Problems ----------
@@ -80,18 +79,18 @@ sub() replaces items that match the regex in the string
 Regex use the backslash to designate special characters and Python does the same inside strings which causes issues
 '''
 
-# print("\\stuff")
+print("\\stuff")
 
-# string = "Here is \\stuff"
+string = "Here is \\stuff"
 
-# searched_result = re.search("\\stuff", string)
-# print(searched_result)
+searched_result = re.search("\\stuff", string)
+print(searched_result)
 
-# searched_result = re.search("\\\\stuff", string)
-# print(searched_result)
+searched_result = re.search("\\\\stuff", string)
+print(searched_result)
 
-# searched_result = re.search(r"\\stuff", string)         # using raw string
-# print(searched_result)
+searched_result = re.search(r"\\stuff", string)         # using raw string
+print(searched_result)
 
 
 #### ---------- Matching Any Character ----------
@@ -99,30 +98,69 @@ Regex use the backslash to designate special characters and Python does the same
 . matches any character, but what if we want to match a full stop. Backslash the full stop
 '''
 
-# randStr = "F.B.I. I.R.S. CIA Dr. Mr."
+randStr = "F.B.I. I.R.S. CIA Dr. Mr."
 
-# search = re.search(".",randStr)
-# print(search)
+search = re.search(".",randStr)
+print(search)
 
-# print("Matches :",re.findall(".\..\..\.", randStr))       ##It gives warning for invalid escape sequence
+print("Matches :",re.findall(".\..\..\.", randStr))       ##It gives warning for invalid escape sequence
 
 
 ### The 'r' before the string makes it a raw string
-# print("Matches :", re.findall(r".\..\..\.", randStr))
+print("Matches :", re.findall(r".\..\..\.", randStr))
 
 
 ### Use '\\' to create a literal backslash in a normal string
-# print("Matches :", re.findall(".\\..\\..\\.", randStr))
+print("Matches :", re.findall(".\\..\\..\\.", randStr))
 
 
-#### ---------- Matching Whitespace ----------
+#### ---------- Matching Whitespace -------------------
  
-# randStr = """This is a long
-# string that goes
-# on for many lines"""
+randStr = """This is a long
+string that goes
+on for many lines"""
 
-# print(randStr)
+print(randStr)
 
-# # Remove newlines
-# match = re.sub("\n", " ", randStr)
-# print(match)
+# Remove newlines
+match = re.sub("\n", " ", randStr)
+print(match)
+
+
+# -----------------Practice Questions--------------------------
+
+animals = 'dog frog cat dog rat cat'
+
+'''
+Q. find the first occurrence of "frog".
+Q. How many times does "dog" appear in the string animals?
+Q. Using animals, find all words that end with "og" but do not start with "d" or "r".
+Q. In the string animals, find all words that start with letters from 'a' to 'f' followed by "at".
+Q. Replace all occurrences of "cat" with "lion" in the string animals.
+Q. In the string text = "A.B.C. D.E.F.", find "A.B."
+Q. In the string message = "Hello, world!", use regex to find any character followed by "ello".
+'''
+
+frog_index = re.search("frog",animals)
+print(frog_index)
+
+total_list = re.findall("dog", animals)
+print(len(total_list))
+
+all_animals = re.findall("[^dr]og", animals)
+print(all_animals)
+
+all_animals = re.findall("[a-f]at", animals)
+print(all_animals)
+
+new_string = re.sub("cat","lion",animals)
+print(new_string)
+
+text = "A.B.C. D.E.F."
+pattern = r".\..\..\."
+mathched_list = re.findall(pattern, text)
+print(mathched_list)
+
+message = "Hello, world!"
+matched_string = re.search("[A-Z,a-z]ello", message)
+print(matched_string)
