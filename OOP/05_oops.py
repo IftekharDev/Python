@@ -153,3 +153,13 @@ print(book.get_title)
 
 book.set_title = "Pani"
 print(book.get_title)
+
+
+####---------- static methods in oop------------
+
+class X:
+   @staticmethod
+   def add(x,y):
+       return x + y
+
+print(X.add(3,4))
