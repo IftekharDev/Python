@@ -87,3 +87,68 @@ $     : End of String
 #zero or many (*)
 # match =  re.findall("[cC]ats*", randstr)
 # print("Matches :",match)
+
+
+#### ----------------- WORD BOUNDARIES -----------------
+###\b used as a word boundary to define the start and end of a word
+
+# randomStr = "The cat and catalog are in the category."
+# matches = re.findall(r"cat", randomStr)
+# print(matches)
+
+# randomStr = "The cat and catalog are in the category."
+# matches = re.findall(r"\bcat\b", randomStr)
+# print(matches)
+
+
+#### ------------- SUB-EXPRESSIONS ------------------
+
+'''
+for matching large block and returning a part of it ( ) are used
+'''
+
+# astring = "Call me on 412-6547-8877"
+# matches = re.findall(r"412-(.*)", astring)
+# print(matches)
+
+# astring = "Call me on 412-6547-8877"
+# matches = re.findall(r"(412-.*)", astring)
+# print(matches)
+
+# dstring = "The most commonly occuring natural disaster is earthquake"
+# matches = re.findall(r"(earth)quake", dstring)
+# print(matches)
+
+
+# -------------- OR CONDITIONAL OPERATOR --------------
+
+# Str = "123456 123456-123 1234-12345 123456-786 123-222"
+# regex = re.compile(r"(\d{6}|\d{6}-\d{3})\s")
+# matches = re.findall(regex, Str)
+# print(matches)
+
+
+# randStr = "1.Cat 2.Dog 3.Rat 4.Panther 5.Camel 6.Hen"
+# regex = re.compile (r"\d\.(Dog|Panther|Cow)")
+# matches = re.findall(regex, randStr)
+# print(matches)
+# print("Matches :",len(matches))
+
+
+#### ------------------ GROUP ------------------
+
+# Astring = "21-05-1950 22-02-77"
+
+# regex = re.compile(r"\d{1,2}-\d{1,2}-\d{1,4}")
+# matches = re.findall(regex, Astring)
+# print(matches)
+
+
+# regex = re.compile(r"(\d{1,2})-(\d{1,2})-(\d{1,4})")
+# matches = re.search(regex, Astring)
+# print(matches)
+# print("My D.O.B. =",matches.group())
+# print("My Birth Date =",matches.group(1))
+# print("My Birth Month =",matches.group(2))
+# print("My Birth Year =",matches.group(3))
+
