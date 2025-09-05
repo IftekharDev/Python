@@ -29,76 +29,76 @@ $     : End of String
 
 #### -------------- MATCHING A SINGLE SEARCH --------------
 
-# phone = "567-3746-3767"
-# print(re.search(r"\d{3}-\d{4}-\d{4}", phone))
+phone = "567-3746-3767"
+print(re.search(r"\d{3}-\d{4}-\d{4}", phone))
 
-# name = "John Doe"
-# n = re.findall(r"\w{4}\s\w{3}", name)
-# print(n)
+name = "John Doe"
+n = re.findall(r"\w{4}\s\w{3}", name)
+print(n)
 
-# x = "I got 90 marks in maths"
-# print(re.findall(r"\D{1,30}",x))
+x = "I got 90 marks in maths"
+print(re.findall(r"\D{1,30}",x))
 
-# print(re.findall(r"\D+", "Hello 123"))
+print(re.findall(r"\D+", "Hello 123"))
 
 
 #### -------------- MATCHING MULTIPLE SEARCHES --------------
 
-# numStr = "123 12345 123456 1234567 12345678 123456789"
-# print(re.findall(r"\d{5,7}", numStr))
-# print(re.findall(r"\b\d{5,7}\b", numStr))
+numStr = "123 12345 123456 1234567 12345678 123456789"
+print(re.findall(r"\d{5,7}", numStr))
+print(re.findall(r"\b\d{5,7}\b", numStr))
 
 
-# PhoneNum = "0755-2345192 0755-5690432 075-5647381"
-# matches = re.findall(r"\d{4}-\d{7}", PhoneNum)
-# print(matches)
+PhoneNum = "0755-2345192 0755-5690432 075-5647381"
+matches = re.findall(r"\d{4}-\d{7}", PhoneNum)
+print(matches)
 
 
 ### Check if it is a phone number
-# phNum = "412-555-1212"
+phNum = "412-555-1212"
 
-# if re.search(r"\w{3}-\w{3}-\w{4}", phNum):
-#    print("It is a phone number")
-# else:
-#    print("Invalid")
+if re.search(r"\w{3}-\w{3}-\w{4}", phNum):
+   print("It is a phone number")
+else:
+   print("Invalid")
 
 
 #### ---------------- EMAIL PATTERN SEARCH ----------------
 
-# email = """@grow_526gmail.com
-# 5543_tr.@yahoo.com
-# limit.less@hotmail.com"""
+email = """@grow_526gmail.com
+5543_tr.@yahoo.com
+limit.less@hotmail.com"""
 
-# mail = re.findall(r"[\w\._%+-]{1,20}@[\w]{1,10}\.[\w]{1,10}", email)
-# print(mail)
+mail = re.findall(r"[\w\._%+-]{1,20}@[\w]{1,10}\.[\w]{1,10}", email)
+print(mail)
 
 
 #### -------------- MATCHING ZERO, ONE, MANY --------------
 
 ###zero or one (?)
-# randstr = "cat cats Catsss catssssssssss"
-# pattern = re.findall("[cC]ats?", randstr)
-# print(pattern)
+randstr = "cat cats Catsss catssssssssss"
+pattern = re.findall("[cC]ats?", randstr)
+print(pattern)
 
 ###one or many (+)
-# match = re.findall("[cC]ats+", randstr)        
-# print(match)
+match = re.findall("[cC]ats+", randstr)        
+print(match)
 
-#zero or many (*)
-# match =  re.findall("[cC]ats*", randstr)
-# print("Matches :",match)
+###zero or many (*)
+match =  re.findall("[cC]ats*", randstr)
+print("Matches :",match)
 
 
 #### ----------------- WORD BOUNDARIES -----------------
 ###\b used as a word boundary to define the start and end of a word
 
-# randomStr = "The cat and catalog are in the category."
-# matches = re.findall(r"cat", randomStr)
-# print(matches)
+randomStr = "The cat and catalog are in the category."
+matches = re.findall(r"cat", randomStr)
+print(matches)
 
-# randomStr = "The cat and catalog are in the category."
-# matches = re.findall(r"\bcat\b", randomStr)
-# print(matches)
+randomStr = "The cat and catalog are in the category."
+matches = re.findall(r"\bcat\b", randomStr)
+print(matches)
 
 
 #### ------------- SUB-EXPRESSIONS ------------------
@@ -107,48 +107,48 @@ $     : End of String
 for matching large block and returning a part of it ( ) are used
 '''
 
-# astring = "Call me on 412-6547-8877"
-# matches = re.findall(r"412-(.*)", astring)
-# print(matches)
+astring = "Call me on 412-6547-8877"
+matches = re.findall(r"412-(.*)", astring)
+print(matches)
 
-# astring = "Call me on 412-6547-8877"
-# matches = re.findall(r"(412-.*)", astring)
-# print(matches)
+astring = "Call me on 412-6547-8877"
+matches = re.findall(r"(412-.*)", astring)
+print(matches)
 
-# dstring = "The most commonly occuring natural disaster is earthquake"
-# matches = re.findall(r"(earth)quake", dstring)
-# print(matches)
+dstring = "The most commonly occuring natural disaster is earthquake"
+matches = re.findall(r"(earth)quake", dstring)
+print(matches)
 
 
 # -------------- OR CONDITIONAL OPERATOR --------------
 
-# Str = "123456 123456-123 1234-12345 123456-786 123-222"
-# regex = re.compile(r"(\d{6}|\d{6}-\d{3})\s")
-# matches = re.findall(regex, Str)
-# print(matches)
+Str = "123456 123456-123 1234-12345 123456-786 123-222"
+regex = re.compile(r"(\d{6}|\d{6}-\d{3})\s")
+matches = re.findall(regex, Str)
+print(matches)
 
 
-# randStr = "1.Cat 2.Dog 3.Rat 4.Panther 5.Camel 6.Hen"
-# regex = re.compile (r"\d\.(Dog|Panther|Cow)")
-# matches = re.findall(regex, randStr)
-# print(matches)
-# print("Matches :",len(matches))
+randStr = "1.Cat 2.Dog 3.Rat 4.Panther 5.Camel 6.Hen"
+regex = re.compile (r"\d\.(Dog|Panther|Cow)")
+matches = re.findall(regex, randStr)
+print(matches)
+print("Matches :",len(matches))
 
 
 #### ------------------ GROUP ------------------
 
-# Astring = "21-05-1950 22-02-77"
+Astring = "21-05-1950 22-02-77"
 
-# regex = re.compile(r"\d{1,2}-\d{1,2}-\d{1,4}")
-# matches = re.findall(regex, Astring)
-# print(matches)
+regex = re.compile(r"\d{1,2}-\d{1,2}-\d{1,4}")
+matches = re.findall(regex, Astring)
+print(matches)
 
 
-# regex = re.compile(r"(\d{1,2})-(\d{1,2})-(\d{1,4})")
-# matches = re.search(regex, Astring)
-# print(matches)
-# print("My D.O.B. =",matches.group())
-# print("My Birth Date =",matches.group(1))
-# print("My Birth Month =",matches.group(2))
-# print("My Birth Year =",matches.group(3))
+regex = re.compile(r"(\d{1,2})-(\d{1,2})-(\d{1,4})")
+matches = re.search(regex, Astring)
+print(matches)
+print("My D.O.B. =",matches.group())
+print("My Birth Date =",matches.group(1))
+print("My Birth Month =",matches.group(2))
+print("My Birth Year =",matches.group(3))
 
