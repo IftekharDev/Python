@@ -51,3 +51,73 @@ returns a match object if successful or 'None' if not.
 #    print("End Index:",i.end())
 #    print()
 
+
+####------------- quantifiers-------------------
+
+'''
+quantifiers in regular expressions specifies how many times a character, group or character class should be matched.
+
+'+' matches one or more time.
+'''
+
+# text = "apple pineapple"
+# pattern = r'a+'
+# matches = re.findall(pattern, text)
+# print(matches)
+
+
+#### --------------'?' quantifier in regex-----------------
+
+
+### '?' mathces zero or one times
+
+# text = "color colours"
+# pattern = r'colou?r'
+# matches = re.findall(pattern, text)
+# print(matches)
+
+
+#### ------------'*' quantifier in regex--------------
+
+### '*' matches zero or more times
+
+# text = "apple pineapple"
+# pattern = r'a*'
+# matches = re.findall(pattern, text)
+# print(matches)
+
+
+#### ----------{n} : matches exactly n times. (consecutively)-------------
+
+# text = "apple pineapple"
+# pattern = r'a{2,4}'
+# matches = re.findall(pattern, text)
+# print(matches)
+
+
+#### -------------------IGNORECASE------------------------------
+
+
+### a flag that allows for case-insensitive matching
+
+# pattern = r'hello'
+# text = 'Hello there!'
+
+# match = re.search(pattern, text, re.IGNORECASE)
+# if match:
+#     print("Match found!", match.group())
+
+
+### with compile()
+
+# pattern = re.compile(r'hello', re.IGNORECASE)
+# text = 'Hello there!'
+
+# match = re.search(pattern, text)
+
+# if match:
+#     print("Match found!", match.group())
+# else:
+#     print("not found.")
+
+
